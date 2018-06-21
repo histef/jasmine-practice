@@ -1,22 +1,23 @@
 //import js file to be able to test
 // .current level, ..up a level
-let Summation = require("../practiceApp");
+let summation = require("../practiceApp");
 
 describe('codewars exercise, summation:', () =>{
 	it('should be defined', () =>{
-		expect(summation).toBeDefined();
+		expect(typeof summation).toBe('object');
 	});
+
+	it('should have explanation', () => {
+		expect(summation.intro).toBe("add all numbers between 1-param")
+	});
+
 
 	it('should be a function', () =>{
-		expect(summation).toBeFunction();
-	});
-
-	it('should define sum', () =>{
-		expect(sum).toBeDefined();
+		expect(typeof summation.summate).toBe("function");
 	});
 
 	it('should add all numbers between 1 and num', () =>{
-	expect(summation(3)).toEqual(6);
+	expect(summation.summate(3)).toEqual(6);
 	});
 
 });
