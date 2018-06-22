@@ -22,6 +22,16 @@ describe('codewars exercise, summation:', () =>{
 
 });
 
+describe('summate function', ()=>{
+
+    it('should be called on', function(){
+    	//create a spy before calling function        	
+        spyOn(summation, 'summate');
+        //call function
+        summation.summate(); 
+        expect(summation.summate).toHaveBeenCalled();
+    });
+});
 
 /*let Add = require("../practiceApp");
 

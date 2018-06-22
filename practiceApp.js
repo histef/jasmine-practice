@@ -14,7 +14,7 @@ module.exports = add;
 *  return sum;
 }*/
 
-//change to object to allow Jasmine to see variables
+//change to object to allow Jasmine to see variables.
 let summation = {
 	intro: "add all numbers between 1-param",
 	summate: function(num){
